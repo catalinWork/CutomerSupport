@@ -31,6 +31,44 @@
             color: #888;
             margin-bottom: 2.5rem;
         }
+        .contact-card {
+            background: #14142a;
+            border: 1px solid #2a2a4a;
+            border-radius: 16px;
+            padding: 2rem;
+            margin-bottom: 2rem;
+        }
+        .contact-card h2 {
+            font-size: 1.2rem;
+            margin-bottom: 0.75rem;
+            color: #fff;
+        }
+        .contact-card p {
+            line-height: 1.6;
+            color: #bbb;
+        }
+        .email-link {
+            display: inline-block;
+            margin-top: 1rem;
+            padding: 12px 28px;
+            background: linear-gradient(135deg, #6c63ff, #48c6ef);
+            color: #fff;
+            font-weight: 600;
+            border-radius: 8px;
+            text-decoration: none;
+        }
+        .email-link:hover {
+            opacity: 0.9;
+            text-decoration: none;
+        }
+        .apps-section {
+            margin-top: 1rem;
+        }
+        .apps-label {
+            font-size: 0.9rem;
+            color: #888;
+            margin-bottom: 1rem;
+        }
         .app-card {
             display: block;
             background: #14142a;
@@ -75,17 +113,26 @@
 <body>
     <div class="container">
         <h1>Customer Support</h1>
-        <p class="subtitle">Select your app for help and FAQs</p>
+        <p class="subtitle">Need help or have feedback? We're here for you.</p>
 
-        <a class="app-card orbit-hopper" href="orbit-hopper/">
-            <h2>OrbitHop</h2>
-            <p>Gravity-hopping arcade game</p>
-        </a>
+        <div class="contact-card">
+            <h2>Get in Touch</h2>
+            <p>If you have questions, issues, or feedback about any of our apps, feel free to reach out.</p>
+            <a class="email-link" href="mailto:catalin.lazar.work@gmail.com">catalin.lazar.work@gmail.com</a>
+        </div>
 
-        <a class="app-card screaming-bowls" href="screaming-bowls/">
-            <h2>Screaming Bowls</h2>
-            <p>Support page coming soon</p>
-        </a>
+        <div class="apps-section">
+            <p class="apps-label">Looking for app-specific help?</p>
+            <a class="app-card orbit-hopper" href="orbit-hopper/">
+                <h2>Orbit Hopper</h2>
+                <p>Gravity-hopping arcade game</p>
+            </a>
+
+            <a class="app-card screaming-bowls" href="screaming-bowls/">
+                <h2>Screaming Bowls</h2>
+                <p>Support page coming soon</p>
+            </a>
+        </div>
 
         <p class="footer">&copy; 2026 Catalin Lazar. All rights reserved.</p>
     </div>
