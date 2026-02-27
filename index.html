@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>OrbitHop - Support</title>
+    <title>Customer Support</title>
     <style>
         * { margin: 0; padding: 0; box-sizing: border-box; }
         body {
@@ -22,71 +22,51 @@
             text-align: center;
         }
         h1 {
-            font-size: 2.5rem;
-            margin-bottom: 0.25rem;
+            font-size: 2.2rem;
+            margin-bottom: 0.5rem;
+            color: #fff;
+        }
+        .subtitle {
+            font-size: 1rem;
+            color: #888;
+            margin-bottom: 2.5rem;
+        }
+        .app-card {
+            display: block;
+            background: #14142a;
+            border: 1px solid #2a2a4a;
+            border-radius: 16px;
+            padding: 1.5rem 2rem;
+            margin-bottom: 1rem;
+            text-decoration: none;
+            text-align: left;
+            transition: border-color 0.2s, transform 0.2s;
+        }
+        .app-card:hover {
+            border-color: #555;
+            transform: translateY(-2px);
+            text-decoration: none;
+        }
+        .app-card h2 {
+            font-size: 1.3rem;
+            margin-bottom: 0.3rem;
+        }
+        .app-card p {
+            font-size: 0.9rem;
+            color: #888;
+        }
+        .app-card.orbit-hopper h2 {
             background: linear-gradient(135deg, #f7971e, #ffd200);
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
         }
-        .tagline {
-            font-size: 1rem;
-            color: #888;
-            margin-bottom: 2rem;
-        }
-        .card {
-            background: #14142a;
-            border: 1px solid #2a2a4a;
-            border-radius: 16px;
-            padding: 2rem;
-            margin-bottom: 1.5rem;
-        }
-        .card h2 {
-            font-size: 1.2rem;
-            margin-bottom: 1rem;
-            color: #ffd200;
-        }
-        .card p {
-            line-height: 1.6;
-            color: #bbb;
-        }
-        a {
-            color: #ffd200;
-            text-decoration: none;
-        }
-        a:hover {
-            text-decoration: underline;
-        }
-        .email-link {
-            display: inline-block;
-            margin-top: 1rem;
-            padding: 12px 28px;
-            background: linear-gradient(135deg, #f7971e, #ffd200);
-            color: #0a0a1a;
-            font-weight: 600;
-            border-radius: 8px;
-            text-decoration: none;
-        }
-        .email-link:hover {
-            opacity: 0.9;
-            text-decoration: none;
-        }
-        .faq-item {
-            text-align: left;
-            margin-bottom: 1.25rem;
-        }
-        .faq-item:last-child {
-            margin-bottom: 0;
-        }
-        .faq-item h3 {
-            font-size: 0.95rem;
-            color: #e0e0e0;
-            margin-bottom: 0.3rem;
-        }
-        .faq-item p {
-            font-size: 0.9rem;
+        .app-card.screaming-bowls h2 {
+            background: linear-gradient(135deg, #ff6b6b, #ee5a24);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
         }
         .footer {
-            margin-top: 1rem;
+            margin-top: 2rem;
             font-size: 0.8rem;
             color: #555;
         }
@@ -94,38 +74,18 @@
 </head>
 <body>
     <div class="container">
-        <h1>OrbitHop</h1>
-        <p class="tagline">Gravity-hopping arcade game</p>
+        <h1>Customer Support</h1>
+        <p class="subtitle">Select your app for help and FAQs</p>
 
-        <div class="card">
-            <h2>Contact Support</h2>
-            <p>Having an issue or want to share feedback? We'd love to hear from you.</p>
-            <a class="email-link" href="mailto:catalin.lazar.work@gmail.com">catalin.lazar.work@gmail.com</a>
-        </div>
+        <a class="app-card orbit-hopper" href="orbit-hopper/">
+            <h2>OrbitHop</h2>
+            <p>Gravity-hopping arcade game</p>
+        </a>
 
-        <div class="card">
-            <h2>FAQ</h2>
-            <div class="faq-item">
-                <h3>How do I play?</h3>
-                <p>Hold anywhere on the screen to charge your launch. A trajectory line appears showing where your rocket will go. Release to fly! Land on the next planet to keep going.</p>
-            </div>
-            <div class="faq-item">
-                <h3>Does the game work offline?</h3>
-                <p>Yes! OrbitHop is fully playable without an internet connection.</p>
-            </div>
-            <div class="faq-item">
-                <h3>How do I turn off sound or haptics?</h3>
-                <p>You can toggle sound, music, and haptic feedback from the pause or death screen.</p>
-            </div>
-            <div class="faq-item">
-                <h3>Why are there ads?</h3>
-                <p>Ads help keep OrbitHop free for everyone. Rewarded ads are always optional — you choose to watch them for an extra life.</p>
-            </div>
-            <div class="faq-item">
-                <h3>My game is crashing. What should I do?</h3>
-                <p>Make sure your app is updated to the latest version. If the issue persists, email us with your device model and OS version.</p>
-            </div>
-        </div>
+        <a class="app-card screaming-bowls" href="screaming-bowls/">
+            <h2>Screaming Bowls</h2>
+            <p>Support page coming soon</p>
+        </a>
 
         <p class="footer">&copy; 2026 Catalin Lazar. All rights reserved.</p>
     </div>
