@@ -78,6 +78,21 @@
             opacity: 0.9;
             text-decoration: none;
         }
+        .faq-item {
+            text-align: left;
+            margin-bottom: 1.25rem;
+        }
+        .faq-item:last-child {
+            margin-bottom: 0;
+        }
+        .faq-item h3 {
+            font-size: 0.95rem;
+            color: #e0e0e0;
+            margin-bottom: 0.3rem;
+        }
+        .faq-item p {
+            font-size: 0.9rem;
+        }
         .footer {
             margin-top: 1rem;
             font-size: 0.8rem;
@@ -89,7 +104,7 @@
     <div class="container">
         <a class="back-link" href="../">&larr; All Apps</a>
         <h1>Screaming Bowls</h1>
-        <p class="tagline">Support page coming soon</p>
+        <p class="tagline">Voice-controlled arcade catching game</p>
 
         <div class="card">
             <h2>Contact Support</h2>
@@ -99,7 +114,30 @@
 
         <div class="card">
             <h2>FAQ</h2>
-            <p>Frequently asked questions will be added here once the app launches.</p>
+            <div class="faq-item">
+                <h3>How do I play?</h3>
+                <p>Use your voice to control which can catches the falling bowling balls! Scream louder to move the selection to the right, stay quiet to keep it on the left. Catch the ball in the correct can to score points.</p>
+            </div>
+            <div class="faq-item">
+                <h3>Why does the game need microphone access?</h3>
+                <p>Your voice is the controller! The microphone picks up your volume level to determine which can is selected. No audio is recorded or stored — it's only used in real-time during gameplay.</p>
+            </div>
+            <div class="faq-item">
+                <h3>Why does the game ask for camera access?</h3>
+                <p>The camera feed is used as a live background while you play, making screen recordings funnier to share. Camera access is optional — if you decline, the game uses a default background instead.</p>
+            </div>
+            <div class="faq-item">
+                <h3>How do I share my gameplay?</h3>
+                <p>The game automatically records your screen during each run. When the game ends, tap the share button to send the clip to your friends or post it on social media.</p>
+            </div>
+            <div class="faq-item">
+                <h3>Why are there ads?</h3>
+                <p>Ads help keep Screaming Bowls free for everyone. Rewarded ads are always optional — you choose to watch them for a chance to continue your run.</p>
+            </div>
+            <div class="faq-item">
+                <h3>My game is crashing. What should I do?</h3>
+                <p>Make sure your app is updated to the latest version. If the issue persists, email us with your device model and OS version.</p>
+            </div>
         </div>
 
         <p class="footer">&copy; 2026 Catalin Lazar. All rights reserved.</p>
